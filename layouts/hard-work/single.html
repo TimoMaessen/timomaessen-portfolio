@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    .banner {
+      margin-top: 10rem;
+      margin-left: 10%;
+      margin-right: 10%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-bottom: 10rem;
+    }
+
+    .banner img {
+      height: 35rem;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+      border: 3px solid black;
+    }
+
+    .project-title h1 {
+      text-align: center;
+      font-size: 70px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .project-metadata {
+      text-align: left;
+      margin-top: -2rem;
+    }
+
+    .project-content {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    .project-content p {
+      font-size: 32px;
+    }
+
+    .project-content h2 {
+      font-size: 32px;
+    }
+
+    .parallel {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 5rem;
+    }
+
+    .listpart {
+      width: 50%;
+      box-sizing: border-box;
+    }
+  </style>
+  <head>
+    <link rel="icon" href="/images/smiley.png" type="image/x-icon" style=>
+    <link rel="stylesheet" href="/css/_custom.css" />
+    <meta charset="UTF-8" />
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    {{ partial "navbar.html" . }}
+
+    <!-- IMAGE -->
+    <main>
+      <article>
+        <div class="banner">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+        </div>
+        <div class="project-title">
+          <h1>{{ .Title }}</h1>
+        </div>
+        <svg
+          viewBox="0 0 1000 100"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice"
+          style="width: 100%; height: auto"
+        >
+          <path
+            d="M0,50 C250,0 750,100 1000,50"
+            fill="none"
+            stroke="#f8b0b0"
+            stroke-width="1"
+            stroke-dasharray="10"
+          />
+        </svg>
+
+        <div class="project-content">
+          {{ partial "metadata.html" . }}
+          <!-- Section: What -->
+
+          <section>
+            <h2>What?</h2>
+            <p>{{ .Params.sections.what }}</p>
+          </section>
+
+          {{ with .Params.sections.contribution }}
+          <div class="parallel">
+            <div class="listpart">
+              <h2>What did I contribute?</h2>
+              <ul>
+                {{ range split . "\n" }}
+                <li><p>{{ . }}</p></li>
+                {{ end }}
+              </ul>
+            </div>
+            {{ end }} {{ with .Params.sections.skills }}
+            <div class="listpart">
+              <h2>Developed skills</h2>
+              <ul>
+                {{ range split . "\n" }}
+                <li><p>{{ . }}</p></li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+          {{ end }} {{ with .Params.sections.takeaways }}
+          <section>
+            <h2>What were my main takeaways?</h2>
+            <ul>
+              {{ range split . "\n" }}
+              <li><p>{{ . }}</p></li>
+              {{ end }}
+            </ul>
+          </section>
+          {{ end }}
+
+          <p>{{ .Content }}</p>
+
+          {{ partial "movepages.html" . }} {{ partial "footer.html" . }}
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

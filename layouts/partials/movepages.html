@@ -1,0 +1,57 @@
+<style>
+  .pagination {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the two divs */
+    align-items: center; /* Vertically center the text */
+    margin: 20px auto; /* Adds some space above and below */
+    font-size: 18px; /* Set the font size */
+  }
+
+  .pagination a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Set text color */
+    font-weight: 600; /* Make the text bold */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+
+  .pagination a:hover {
+    color: #0056b3; /* Change text color on hover */
+  }
+
+  .prev {
+    text-align: left; /* Align the 'Previous' to the left */
+  }
+
+  .next {
+    text-align: right; /* Align the 'Next' to the right */
+  }
+
+  .prev {
+    
+    cursor: pointer;            /* Change cursor to pointer to indicate it's clickable */
+    color: black;                 /* Text color */
+    display: inline-block;     
+    text-decoration: none;
+  }
+
+  .pagination p {
+    margin-top: 10rem;
+    color: black;
+    font-weight: bold;
+  }
+
+</style>
+<!-- prettier-ignore-start -->
+<nav class="pagination">
+  <div class="prev">
+    {{ with .Prev }}
+    <a href="{{ .Permalink }}"><p>&larr; {{ .Title }}</p></a>
+    {{ end }}
+  </div>
+  <div class="next">
+    {{ with .Next }}
+    <a href="{{ .Permalink }}"><p>{{ .Title }} &rarr;</p></a>
+    {{ end }}
+  </div>
+</nav>
+<!-- prettier-ignore-end -->

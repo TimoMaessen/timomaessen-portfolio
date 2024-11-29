@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/images/smiley.png" type="image/x-icon" style=>
+    <link rel="stylesheet" href="/css/_custom.css">
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .filter-btn.active {
+            background-color: #007BFF;
+            color: white;
+        }
+       
+
+    .projects-grid {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 45rem); /* Each project takes up 30% */
+        gap: 5%;
+        justify-content: center; /* Centers the grid within the available space */
+        width: 90%; /* Leaves 5% space on the left and right */
+        align-items: center;
+        margin: auto;
+        row-gap: 12rem;
+    }
+
+    .project-card-container {
+    height: 45rem;
+    
+    transition: transform 0.1s ease; /* Smooth hover effect */
+   
+    justify-content: space-between;
+}
+.project-card-container img {
+    width: 100%; /* Image takes up the full width of the card */
+    height: 100%; 
+    border-radius: 50px;
+    object-fit: cover; /* Ensures the image is cropped properly if needed */
+}
+
+    .project-card-container:hover img {
+        transform: scale(0.9);
+    }
+
+    .projects-grid h2 {
+        font-size: 40px;
+        font-weight: 350;
+        color: black;
+        margin-top: 25px;
+       
+    }
+
+    .project-card a {
+        text-decoration: none;
+}
+
+.filter-buttons {
+    margin-top: 200px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    
+}
+.filter-btn {
+    background-color: transparent;
+    border-radius: 100px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-color: transparent;
+    padding: 5px 30px;
+    cursor: pointer;
+    color: grey;
+    
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    
+}
+.filter-btn p {    
+    font-size: 25px;
+    font-weight: 560;
+}
+.filter-btn:hover {
+    color: black;
+    transition: 0.3s ease;
+}
+.filter-btn.active {
+    background-color: transparent;
+    color: black;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+    
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .projects-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        }
+    }
+    @media (max-width: 600px) {
+        .projects-grid {
+            grid-template-columns: 1fr; /* 1 column on small screens */
+        }
+    }
+
+    .intro p {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .filter-btn.red:hover{
+        color: #e83f3f;
+    }
+    .filter-btn.red.active{
+        color: #e83f3f;
+    }
+
+    .filter-btn.blue:hover {
+        color: #39dcee;
+    }
+    .filter-btn.blue.active {
+        color: #39dcee;
+    }
+
+    .filter-btn.purple:hover {
+        color: #c95beb;
+    }
+
+    .filter-btn.purple.active {
+        color: #c95beb;
+    }
+
+  
+
+
+
+    
+    </style>
+    <script>
+        function filterProjects(tag) {
+            const projects = document.querySelectorAll('.project-card');
+            projects.forEach(project => {
+                const categories = project.dataset.categories.split(' ');
+                if (tag === 'all' || categories.includes(tag)) {
+                    project.classList.remove('hidden');
+                } else {
+                    project.classList.add('hidden');
+                }
+            });
+
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(button => button.classList.remove('active'));
+            document.querySelector(`[data-tag="${tag}"]`).classList.add('active');
+        }
+    </script>
+
+</head>
+<body>
+    {{ partial "navbar.html" . }}
+
+   
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-tag="all" onclick="filterProjects('all')">
+            <p>All</p>
+        </button>
+        {{ $allTags := slice }}
+        {{ range .Pages }}
+            {{ range .Params.tags }}
+                {{ $allTags = $allTags | append . }}
+            {{ end }}
+        {{ end }}
+        {{ range $tag := $allTags | uniq | sort }}
+            {{ $buttonClass := "default" }}
+            <p>{{ $buttonText := $tag }}</p> <!-- Default text is the tag itself -->
+
+            {{ if eq $tag "automation" }}
+                {{ $buttonClass = "red" }}
+                <p>  {{ $buttonText = "Automation" }}</p>
+            {{ else if eq $tag "user-friendly_interfaces" }}
+                {{ $buttonClass = "blue" }}
+                <p>  {{ $buttonText = "User-friendly interfaces" }}</p>
+            {{ else if eq $tag "playful_experiences" }}
+                {{ $buttonClass = "purple" }}
+                <p>  {{ $buttonText = "Playful experiences" }}</p>
+            {{ end }}
+
+
+
+        <button class="filter-btn {{ $buttonClass }}" data-tag="{{ $tag | urlize }}" onclick="filterProjects('{{ $tag | urlize }}')">
+            <p>{{ $buttonText }}</p>
+        </button>
+        {{ end }}
+    </div>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+        {{ range .Pages }}
+        <div class="project-card" data-categories="{{ if .Params.tags }}{{ delimit .Params.tags " " }}{{ else }}NoTags{{ end }}">
+            <a href="{{ .RelPermalink }}">      
+                <div class="project-card-container"> 
+                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                <h2>{{ .Title }}</h2>     
+            </div>    
+            </a>
+        </div>
+        {{ end }}
+        </section>
+    </main>
+    {{ partial "footer.html" . }}
+</body>
+</html>

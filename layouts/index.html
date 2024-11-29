@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .introduction {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 200px;
+        }
+
+        .introduction-image-container {
+            margin-top: 200px;
+            width: 1000px;
+            height: 1000px;
+            margin-bottom: 70px;
+        }
+
+        .introduction img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        .lego {
+            margin-left: 27%;
+            margin-right: 27%;
+            margin-top: 100px;
+        }
+        
+
+        .introduction p {
+            margin-left: 36%;
+            margin-right: 36%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .lego h1 {
+
+            text-align: center;
+        }
+        .lego h3 {
+
+            text-align: left;
+        }
+        .lego p {
+
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        .lego iframe {
+
+
+            border-radius: 25px;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            margin-top: 100px;
+        }
+
+        .lego-introduction {
+            margin-bottom: 150px;
+        }
+
+        .lego-projects > div {
+            margin-top: 100px;
+}
+.introduction-text p {
+    margin-bottom: 1em; /* Adds spacing between paragraphs */
+}
+.introduction-text {
+    margin-bottom: 200px;
+}
+        
+    </style>
+    
+<head>
+    <link rel="stylesheet" href="/css/_custom.css">
+    <link rel="icon" href="/images/smiley.png" type="image/x-icon" style=>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Optional CSS -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    {{ partial "navbar.html" . }}
+
+    <!-- Introduction content -->
+    <div class="introduction">
+        <div class="introduction-image-container">
+        <img src="/images/front.jpg" alt="Hero Image">
+    </div>
+        <h1>Interaction Designer & Creative Engineer</h1>
+        <div class="introduction-text">
+            <p>{{ .Params.sections.introduction | markdownify }}</p>
+        </div>
+            <br>
+        <p>Timo Maessen</p>
+        <p>Minckelersstraat 37</p>
+        <p>5621GW Eindhoven</p>
+        <p>timo@maessenmakes.nl</p>
+        <p>+31 (0)6 41 31 75 05</p>
+    </div>
+
+    <!-- Page divider -->
+    <svg viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="width: 100%; height: auto;">
+        <path d="M0,50 C400,-40 800,140 1200,50" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="10"/>
+    </svg>
+
+    <!-- Lego content -->
+    <div class="lego">
+        <div class="lego-introduction">
+        {{ with .Params.sections.lego }}
+            <h1>My LEGO journey (from tinkerer to engineer)</h1>
+            {{ range split . "\n" }}
+            <p>{{ . }}</p>
+            <br>
+            {{ end }}
+        {{ end }}
+        </div>
+
+        <div class="lego-projects">
+            <div class="cola-dispenser">
+                <h3>Lego Cola Dispenser (2012)</h3>
+                <p>One of my first LEGO machines. By throwing in a 1-euro coin, you can push the rod inside, that pushes a can of coke over the edge for you to consume. </p>
+                <iframe 
+                    src="https://www.youtube.com/embed/z-T1SkgBcUo" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="egg-painting-machine">
+                <h3>Lego Egg Painting Machine (2013)</h3>
+                <p>I was tired of constantly having to hold an egg in order to paint it. That’s why I made this machine in which you can strap the egg just tight enough so the egg stays in place but doesn’t brake. The LEGO Technic motor will make the egg rotate very fast. Now you can simply put a pen through the whole an create beautiful eastereggs to hide them in your garden. </p>
+                <iframe 
+                    src="https://www.youtube.com/embed/sWvHTdHbID8" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="coin-pusher-v1">
+                <h3>Coin Pusher V1 (2013)</h3>
+                <p>This was my first time using a bit more complicated system with Lego Technic. I managed to think of a system that allows a fast spinning motor to rotate just fast enough for the coin pusher to be playable. </p>
+                <iframe 
+                    src="https://www.youtube.com/embed/tcgK2gfScoE" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <iframe 
+                    src="https://www.youtube.com/embed/oBZ9h0tuJMg" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="claw-machine">
+                <h3>Claw Machine (2013)</h3>
+                <p>This project includes the Lego Mindstorms NXT 2.0. After a color scanner will identify the 1 Euro coin, you can use the two front buttons to move the claw backwards and to the right. It will move down and up again and hopefully pick up your prize.</p>
+                <img> 
+                </img>
+            </div>
+            <div class="pinball-machine-v1">
+                <h3>Pinball Machine V1 (2014)</h3>
+                <p>This project includes the Lego Mindstorms NXT 2.0. After a color scanner will identify the 1 Euro coin, three balls will be dispensed at an interval of 10 seconds. If the ball reaches the goal at the back, you will receive a gumball.</p>
+                <iframe 
+                    src="https://www.youtube.com/embed/ycKqOqMonNA" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="coin-pusher-v2">
+                <h3>Coin Pusher V2 (2015)</h3>
+                <p>This pushing mechanism is based on Lego Technic via a rotating arm mechanism and the coin dispensing mechanism works mechanically with a sliding mechanism.</p>
+                <iframe 
+                    src="https://www.youtube.com/embed/KzoUZhP2n-c" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="horse-race">
+                <h3>Horse Race (2016)</h3>
+                <p>Here you battle your opponent in a nerve-wrecking game. By throwing your ball in the hole at the end your horse will move forward. If it falls in the holes on the side, nothing will happen. In both cases your ball will be returned. If your horse reaches the end first, you win!</p>
+                <iframe 
+                    src="https://www.youtube.com/embed/5RZS9Ao2HoE" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="lays-machine">
+                <h3>Lay’s Machine (2016)</h3>
+                <p>By throwing in a 1 Euro coin, you can decide whether you want a Paprika or Natural bag of chips. Depending on which side is being pressed, the according bag will be provided to you. </p>
+                <iframe 
+                    src="https://www.youtube.com/embed/GF_8HvavN4M" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="lego-pinball-machine-v2">
+                <h3>Lego Pinball Machine V2 (2017-2018)</h3>
+                <p>This project is based again on Lego Mindstorms NXT 2.0. It includes a lot of visual elements that make it a lot of fun to use. It’s minecraft themed. You can throw in a 1 Euro coin at the top and balls will be dispensed. By pulling an elastic lever, you can shoot the ball upwards. You have double flippers, elastic bands for the excitement and even a rail that goes over the whole thing. Enough elements that make it one of the coolest projects I have made so far.</p>
+                <iframe 
+                    src="https://www.youtube.com/embed/931L9c0CqH8" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="sideways-lego-9v-track-hill">
+                <h3>Sideways LEGO 9V track hill (2024)</h3>
+                <p>I put the LEGO 9v track pieces on their side and powered each side individually. This allows for a track design with steeper hills, fostering more play opportunities and creative layouts.</p>
+                <iframe 
+                    src="https://www.youtube.com/embed/B7S_m_GzB0U" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- Line -->
+    
+
+    <!-- Lego journey -->
+
+    {{ partial "footer.html" . }}
+
+
+</body>
+</html>

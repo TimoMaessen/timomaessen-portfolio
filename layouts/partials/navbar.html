@@ -1,0 +1,66 @@
+
+<style>
+  .navbar {
+    background-color: transparent;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding-left: .9rem; 
+    padding-right: .9rem; 
+    padding-top: 2.2rem;
+    background-color: transparent; 
+    font-size: 27px;
+    font-weight: 325;
+    position: relative;
+    /*order-bottom: 1px solid #ddd;*/
+  }
+
+  .navbar a {
+        color: grey; /* Inactive state: grey text */
+        text-decoration: none; /* Removes underline from links */
+        transition: color 0.3s ease; /* Smooth transition for color */
+        margin: 0 1.5rem;
+    }
+
+    .navbar a.active {
+        color: black; /* Active state: black text */
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+        text-decoration-thickness: 0.05em;
+    }
+
+    .navbar a:hover {
+        color: black; /* On hover, turn the text to black */
+    }
+    .logo {
+    position: absolute; /* Ensures it stays in the center regardless of other content */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the logo horizontally */
+}
+
+.logo img {
+    display: block; /* Removes inline spacing for the image */
+}
+</style>
+
+<nav class="navbar">
+  <div class="pages">
+    <a href="/" class="{{ if eq .RelPermalink "/"}}active{{ end }}">hello :) 👋🏻</a>
+    <a href="/hard-work" class="{{ if eq .RelPermalink "/hard-work/"}}active{{ end }}">hard work 🎨</a>
+  </div>
+
+  <div class="logo">
+  <a href="/" style="text-decoration: none; display: flex; align-items: center;">
+    <img src="/images/maessenmakes.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
+  </a>
+</div>
+
+  <div class="social-media">
+    <a href="https://www.linkedin.com/in/timomaessen/" target="tab">
+      <img src="/images/linkedin.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    </a>
+    <a href="https://www.youtube.com/c/TopTimoGames" target="tab">
+      <img src="/images/youtube.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    </a>
+</div>
+</nav>

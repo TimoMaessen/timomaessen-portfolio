@@ -1,0 +1,56 @@
+<style>
+  .project-metadata {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .meta-row {
+    display: grid;
+    grid-template-columns: 40px 200px auto; /* Define column widths */
+    align-items: center; /* Vertically aligns content in the row */
+    margin-bottom: -45px;
+  }
+
+  .project-metadata p {
+    font-size: 32px;
+  }
+</style>
+
+<div class="project-metadata">
+  <div class="meta-row">
+    {{ with .Params.metadata.context }}
+    <span class="meta-icon"><p>🌍</p></span>
+    <span class="meta-title"><p>Context</p></span>
+    <span class="meta-content"><p>{{ . }}</p></span>
+    {{ end }}
+  </div>
+  <div class="meta-row">
+    {{ with .Params.metadata.course }}
+    <span class="meta-icon"><p>📚</p></span>
+    <span class="meta-title"><p>Course</p></span>
+    <span class="meta-content"><p>{{ . }}</p></span>
+    {{ end }}
+  </div>
+  <div class="meta-row">
+    {{ with .Params.metadata.expertise }}
+    <span class="meta-icon"><p>🛠️</p></span>
+    <span class="meta-title"><p>Expertise</p></span>
+    <span class="meta-content"><p>{{ . }}</p></span>
+    {{ end }}
+  </div>
+  <div class="meta-row">
+    {{ with .Params.metadata.timespan }}
+    <span class="meta-icon"><p>📅</p></span>
+    <span class="meta-title"><p>Timespan</p></span>
+    <span class="meta-content"><p>{{ . }}</p></span>
+    {{ end }}
+  </div>
+  <div class="meta-row">
+    {{ with .Params.metadata.grade }}
+    <span class="meta-icon"><p>⭐</p></span>
+    <span class="meta-title"><p>Grade</p></span>
+    <span class="meta-content"><p>{{ . }}</p></span>
+    {{ end }}
+  </div>
+</div>

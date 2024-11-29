@@ -1,0 +1,31 @@
+<style>
+    .footer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Position items at the left and right */
+    align-items: center; /* Center items vertically */
+    margin: 0 20%; /* Add 20% margin on the left and right */
+    height: 20rem; /* Set the height of the footer */
+    padding: 0 1rem; /* Optional: Add some padding inside the footer */
+}
+
+.footer .copyright,
+.footer .mail {
+    margin: 0; /* Remove any default margins */
+    font-size: 1rem; /* Set font size (optional) */
+}
+
+.footer .copyright p,
+.footer .mail p {
+    margin: 0; /* Remove margins for paragraphs */
+    color: #333; /* Optional: Customize text color */
+}
+</style>
+
+<footer class="footer">
+    <div class="copyright">
+    <p>&copy; {{ now.Format "2006" }} MaessenMakes. All Rights Reserved.</p>
+</div>
+<div class="mail">
+    <p>timo@maessenmakes.nl</p>
+</div>
+</footer>
