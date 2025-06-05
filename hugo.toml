@@ -1,7 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://timomaessen.github.io/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = 'ga-hugo-theme'
+theme = ''
 
 [taxonomies]
 category = "categories"
