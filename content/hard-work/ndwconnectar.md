@@ -1,6 +1,6 @@
 +++
 date = '2024-11-24T21:04:37+01:00'
-draft = true
+draft = false
 title = 'NDW Connect AR'
 tags = ["user-friendly_interfaces","automation"]
 categories = ["lala"]

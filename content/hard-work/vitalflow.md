@@ -1,6 +1,6 @@
 +++
 date = '2024-11-24T21:06:14+01:00'
-draft = true
+draft = false
 title = 'Vitalflow'
 tags = ["automation"]
 categories = ["lala"]

@@ -1,6 +1,6 @@
 +++
 date = '2024-11-25T00:33:40+01:00'
-draft = true
+draft = false
 title = 'Hello'
 tags = ["automation"]
 
