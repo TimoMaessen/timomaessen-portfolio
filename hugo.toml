@@ -1,4 +1,4 @@
-baseURL = 'https://timomaessen.github.io/'
+baseURL = 'https://timomaessen.nl/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = ''
