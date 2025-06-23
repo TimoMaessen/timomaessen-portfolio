@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Automation on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/automation/</link>
+    <link>https://timomaessen.nl/tags/automation/</link>
     <description>Recent content in Automation on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Nov 2024 00:33:40 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://timomaessen.nl/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello</title>
-      <link>http://localhost:1313/</link>
+      <link>https://timomaessen.nl/</link>
       <pubDate>Mon, 25 Nov 2024 00:33:40 +0100</pubDate>
-      <guid>http://localhost:1313/</guid>
+      <guid>https://timomaessen.nl/</guid>
       <description></description>
     </item>
     <item>
       <title>Vitalflow</title>
-      <link>http://localhost:1313/hard-work/vitalflow/</link>
+      <link>https://timomaessen.nl/hard-work/vitalflow/</link>
       <pubDate>Sun, 24 Nov 2024 21:06:14 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/vitalflow/</guid>
+      <guid>https://timomaessen.nl/hard-work/vitalflow/</guid>
       <description></description>
     </item>
     <item>
       <title>TORQU·E</title>
-      <link>http://localhost:1313/hard-work/torque/</link>
+      <link>https://timomaessen.nl/hard-work/torque/</link>
       <pubDate>Sun, 24 Nov 2024 21:05:46 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/torque/</guid>
+      <guid>https://timomaessen.nl/hard-work/torque/</guid>
       <description></description>
     </item>
     <item>
       <title>CardioCalendar</title>
-      <link>http://localhost:1313/hard-work/cardiocalendar/</link>
+      <link>https://timomaessen.nl/hard-work/cardiocalendar/</link>
       <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/cardiocalendar/</guid>
+      <guid>https://timomaessen.nl/hard-work/cardiocalendar/</guid>
       <description></description>
     </item>
     <item>
       <title>NDW Connect AR</title>
-      <link>http://localhost:1313/hard-work/ndwconnectar/</link>
+      <link>https://timomaessen.nl/hard-work/ndwconnectar/</link>
       <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/ndwconnectar/</guid>
+      <guid>https://timomaessen.nl/hard-work/ndwconnectar/</guid>
       <description></description>
     </item>
   </channel>

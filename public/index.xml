@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hello on My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
+    <link>https://timomaessen.nl/</link>
     <description>Recent content in Hello on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Nov 2024 21:06:14 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://timomaessen.nl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vitalflow</title>
-      <link>http://localhost:1313/hard-work/vitalflow/</link>
+      <link>https://timomaessen.nl/hard-work/vitalflow/</link>
       <pubDate>Sun, 24 Nov 2024 21:06:14 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/vitalflow/</guid>
+      <guid>https://timomaessen.nl/hard-work/vitalflow/</guid>
       <description></description>
     </item>
     <item>
       <title>TORQU·E</title>
-      <link>http://localhost:1313/hard-work/torque/</link>
+      <link>https://timomaessen.nl/hard-work/torque/</link>
       <pubDate>Sun, 24 Nov 2024 21:05:46 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/torque/</guid>
+      <guid>https://timomaessen.nl/hard-work/torque/</guid>
       <description></description>
     </item>
     <item>
       <title>CardioCalendar</title>
-      <link>http://localhost:1313/hard-work/cardiocalendar/</link>
+      <link>https://timomaessen.nl/hard-work/cardiocalendar/</link>
       <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/cardiocalendar/</guid>
+      <guid>https://timomaessen.nl/hard-work/cardiocalendar/</guid>
       <description></description>
     </item>
     <item>
       <title>CrowdCollab</title>
-      <link>http://localhost:1313/hard-work/crowdcollab/</link>
+      <link>https://timomaessen.nl/hard-work/crowdcollab/</link>
       <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/crowdcollab/</guid>
+      <guid>https://timomaessen.nl/hard-work/crowdcollab/</guid>
       <description></description>
     </item>
     <item>
       <title>De Bouwplaats</title>
-      <link>http://localhost:1313/hard-work/debouwplaats/</link>
+      <link>https://timomaessen.nl/hard-work/debouwplaats/</link>
       <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/debouwplaats/</guid>
+      <guid>https://timomaessen.nl/hard-work/debouwplaats/</guid>
       <description></description>
     </item>
     <item>
       <title>NDW Connect AR</title>
-      <link>http://localhost:1313/hard-work/ndwconnectar/</link>
+      <link>https://timomaessen.nl/hard-work/ndwconnectar/</link>
       <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/ndwconnectar/</guid>
+      <guid>https://timomaessen.nl/hard-work/ndwconnectar/</guid>
       <description></description>
     </item>
     <item>
       <title>Physi</title>
-      <link>http://localhost:1313/hard-work/physi/</link>
+      <link>https://timomaessen.nl/hard-work/physi/</link>
       <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/physi/</guid>
+      <guid>https://timomaessen.nl/hard-work/physi/</guid>
       <description></description>
     </item>
     <item>
       <title>Wayfinding - GLOW Eindhoven</title>
-      <link>http://localhost:1313/hard-work/wayfinding/</link>
+      <link>https://timomaessen.nl/hard-work/wayfinding/</link>
       <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/wayfinding/</guid>
+      <guid>https://timomaessen.nl/hard-work/wayfinding/</guid>
       <description></description>
     </item>
   </channel>
