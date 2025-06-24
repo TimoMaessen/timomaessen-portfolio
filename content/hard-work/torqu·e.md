@@ -1,5 +1,5 @@
 +++
-date = '2024-11-24T21:05:46+01:00'
+date = '2024-11-30T21:05:46+01:00'
 draft = false
 title = 'TORQU·E'
 tags = ["user-friendly_interfaces","automation"]

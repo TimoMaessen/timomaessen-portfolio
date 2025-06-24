@@ -15,5 +15,19 @@
       <guid>http://localhost:1313/tags/automation/</guid>
       <description></description>
     </item>
+    <item>
+      <title>User-Friendly_interfaces</title>
+      <link>http://localhost:1313/tags/user-friendly_interfaces/</link>
+      <pubDate>Sun, 24 Nov 2024 21:05:46 +0100</pubDate>
+      <guid>http://localhost:1313/tags/user-friendly_interfaces/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Playful_experiences</title>
+      <link>http://localhost:1313/tags/playful_experiences/</link>
+      <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
+      <guid>http://localhost:1313/tags/playful_experiences/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

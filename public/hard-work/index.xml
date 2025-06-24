@@ -6,20 +6,41 @@
     <description>Recent content in Hard Work on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Nov 2024 21:06:14 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 30 Nov 2024 21:05:46 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/hard-work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TORQU·E</title>
+      <link>http://localhost:1313/hard-work/torque/</link>
+      <pubDate>Sat, 30 Nov 2024 21:05:46 +0100</pubDate>
+      <guid>http://localhost:1313/hard-work/torque/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Physi</title>
+      <link>http://localhost:1313/hard-work/physi/</link>
+      <pubDate>Fri, 29 Nov 2024 21:04:37 +0100</pubDate>
+      <guid>http://localhost:1313/hard-work/physi/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Vitalflow</title>
       <link>http://localhost:1313/hard-work/vitalflow/</link>
-      <pubDate>Sun, 24 Nov 2024 21:06:14 +0100</pubDate>
+      <pubDate>Thu, 28 Nov 2024 21:06:14 +0100</pubDate>
       <guid>http://localhost:1313/hard-work/vitalflow/</guid>
       <description></description>
     </item>
     <item>
-      <title>TORQU·E</title>
-      <link>http://localhost:1313/hard-work/torque/</link>
-      <pubDate>Sun, 24 Nov 2024 21:05:46 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/torque/</guid>
+      <title>Aromaesthetic</title>
+      <link>http://localhost:1313/hard-work/aromaesthetic/</link>
+      <pubDate>Wed, 27 Nov 2024 21:04:37 +0100</pubDate>
+      <guid>http://localhost:1313/hard-work/aromaesthetic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microfluidic valve</title>
+      <link>http://localhost:1313/hard-work/microfluidic-valve/</link>
+      <pubDate>Wed, 27 Nov 2024 21:04:37 +0100</pubDate>
+      <guid>http://localhost:1313/hard-work/microfluidic-valve/</guid>
       <description></description>
     </item>
     <item>
@@ -48,13 +69,6 @@
       <link>http://localhost:1313/hard-work/ndwconnectar/</link>
       <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
       <guid>http://localhost:1313/hard-work/ndwconnectar/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Physi</title>
-      <link>http://localhost:1313/hard-work/physi/</link>
-      <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
-      <guid>http://localhost:1313/hard-work/physi/</guid>
       <description></description>
     </item>
     <item>

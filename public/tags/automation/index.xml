@@ -15,5 +15,40 @@
       <guid>http://localhost:1313/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Vitalflow</title>
+      <link>http://localhost:1313/hard-work/vitalflow/</link>
+      <pubDate>Sun, 24 Nov 2024 21:06:14 +0100</pubDate>
+      <guid>http://localhost:1313/hard-work/vitalflow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TORQU·E</title>
+      <link>http://localhost:1313/hard-work/torque/</link>
+      <pubDate>Sun, 24 Nov 2024 21:05:46 +0100</pubDate>
+      <guid>http://localhost:1313/hard-work/torque/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CardioCalendar</title>
+      <link>http://localhost:1313/hard-work/cardiocalendar/</link>
+      <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
+      <guid>http://localhost:1313/hard-work/cardiocalendar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microfluidic valve</title>
+      <link>http://localhost:1313/hard-work/microfluidic-valve/</link>
+      <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
+      <guid>http://localhost:1313/hard-work/microfluidic-valve/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NDW Connect AR</title>
+      <link>http://localhost:1313/hard-work/ndwconnectar/</link>
+      <pubDate>Sun, 24 Nov 2024 21:04:37 +0100</pubDate>
+      <guid>http://localhost:1313/hard-work/ndwconnectar/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
